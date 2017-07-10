@@ -1,0 +1,19 @@
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.apache.httpcomponents:httpclient:4.5.3'
+}
+
+task run(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+
+    main = 'com.github.kohanyirobert.os.Main'
+
+    if (project.hasProperty('languageId') && project.hasProperty('movieHash')) {
+        args project.getProperty('languageId'), project.getProperty('movieHash')
+    }
+}

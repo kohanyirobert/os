@@ -1,0 +1,34 @@
+<methodCall>
+    <methodName>SearchSubtitles</methodName>
+    <params>
+        <param>
+            <value>
+                <string></string>
+            </value>
+        </param>
+        <param>
+            <value>
+                <array>
+                    <data>
+                        <value>
+                            <struct>
+                                <member>
+                                    <name>sublanguageid</name>
+                                    <value>
+                                        <string>hun</string>
+                                    </value>
+                                </member>
+                                <member>
+                                    <name>moviehash</name>
+                                    <value>
+                                        <string>a67fbdf9a1b23499</string>
+                                    </value>
+                                </member>
+                            </struct>
+                        </value>
+                    </data>
+                </array>
+            </value>
+        </param>
+    </params>
+</methodCall>
